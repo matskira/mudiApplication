@@ -34,6 +34,6 @@ public class PedidoController {
 		
 		Pedido pedido = requisicao.toPedido();
 		dao.save(pedido);
-		return "pedido/formulario";
+		return "redirect:/home";
 	}
 }
